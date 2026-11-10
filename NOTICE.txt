@@ -1,0 +1,11 @@
+Go 1.27.3 for tOS
+===================
+
+The official linux-amd64 release from https://go.dev/dl/ (go1.27.3.linux-amd64.tar.gz), unmodified except that the test, api, doc and misc folders
+and test files were removed to save space.
+
+Added for tOS:
+  bin/go-tos     the command `go`: sets GOROOT and, on the first run, copies cache-seed/ to the build cache (GOCACHE, default ~/.cache/go-build)
+  cache-seed/    the standard library compiled once (CGO_ENABLED=0) with this toolchain, so a first build takes seconds
+
+License: BSD-3-Clause (LICENSE). The complete source is in the package under src/ and at https://go.googlesource.com/go.
